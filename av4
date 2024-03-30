@@ -1,0 +1,42 @@
+/*
+ ============================================================================
+ Instituição: IESB
+ Disciplina : Algoritmos e Programação de Computadores I (APCI)
+ Objetivo   : Calcular a mudança do salário do professor ao dos anos
+ Aluno      : Guilherme Ferreira de Souza - 2412130057
+ Data       : 29/03/2024
+ ============================================================================
+ */
+
+int main(void) {
+  float salario_base, salario_atual, perc_reajuste, id;
+  int ano_inicio, ano_atual, i;
+  int ganhou_bonus;
+  const float perc_bonus = 0.02;
+  ano_inicio = 2015;
+  salario_base = 5000;
+  perc_reajuste = 0.05;
+  printf("Digite o ano de contratação: ");
+  scanf("%d", &ano_inicio);
+  printf("Digite o ano atual: ");
+  scanf("%d", &ano_atual);
+  printf("Digite o salário base: ");
+  scanf("%f", &salario_base);
+  printf("Digite o percentual de reajuste: ");
+  scanf("%f", &perc_reajuste);
+  printf("Ganhou bônus? (1 para Sim, 0 para Não): ");
+  scanf("%d", &ganhou_bonus);
+  printf("guilherme ferreira de souza 2412130057");
+  scanf("%f", &id);
+
+  salario_atual = salario_base;
+  for (i = ano_inicio; i <= ano_atual; i++) {
+    if (ganhou_bonus == 1) {
+      salario_atual = salario_atual + (salario_atual * perc_bonus);
+    }
+    salario_atual = salario_atual + (salario_atual * perc_reajuste);
+  }
+  printf("O salário atual do professor é: %.2f\n", salario_atual);
+
+  return 0;
+}
