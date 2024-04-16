@@ -1,0 +1,82 @@
+int main (void){
+	int livro;
+	int livro1 = 1;
+	int livro2 = 2;
+	int livro3 = 3;
+	int mais_livros;
+	int quantidade_livros;
+	
+	printf("Informe o codigo do livro desejado\n");
+	printf("Codigo dos livros disponiveis de 1 a 3: \n");
+	scanf("%d", &livro1);
+	
+	
+	if(livro == livro1){
+		printf("Seu livro foi encontrado!\n");
+		printf("Dirija-se a prateleira correta!");
+	}
+	else if(livro == livro2){
+		printf("Seu livro foi encontrado!\n");
+		printf("Dirija-se a prateleira correta!");
+	}
+	else if(livro3 == livro3){
+		printf("Seu livro foi encontrado!\n");
+		printf("Dirija-se a prateleira correta!");
+	}
+	else if(livro != livro1){
+		printf("Livro nao encontrado");
+	}
+	else if(livro != livro2){
+		printf("Livro nao encontrado");
+	}
+	else if(livro != livro3){
+		printf("Livro nao encontrado");
+	}
+	
+	
+	printf("\nQuantos livros estao com voce? limite de tres unidades\n");
+	scanf("%d", &quantidade_livros);
+	
+	if(quantidade_livros >= 3){
+		printf("Voce nao pode pegar mais livros\n");
+		printf("Devolva no tempo adequado de 7 dias\n");
+	}
+	else if(quantidade_livros < 3){	
+		printf("Voce ainda pode pegar mais livros!\n");
+		printf("Limite de tres unidades por pessoa!\n");
+		printf("\nDeseja pegar outro livro? \nDigite 1 para sim ou 2 para nao!\n");
+		scanf("%d", &mais_livros);
+	}
+	if(mais_livros == 2){
+		printf("\nAgradecemos por usar nosso servico!");
+		printf("\nDevolva no tempo adequado de 7 dias");
+	}
+	else if(mais_livros == 1){	
+		printf("informe o codigo do livro desejado: \n");
+		printf("codigo dos livros disponiveis de 1 a 3! \n");
+		scanf("%d", &livro);
+	if(livro == 0){
+		printf("Seu livro nao foi encontrado! \n");
+	}
+	else if(livro1 == 1){
+		printf("Seu livro foi encontrado!\n");
+		printf("Dirija-se a prateleira correta!");
+	}
+	else if(livro2 == 2){
+		printf("Seu livro foi encontrado!\n");
+		printf("Dirija-se a prateleira correta!");
+	}
+	else if(livro3 == 3){
+		printf("Seu livro foi encontrado!\n");
+		printf("Dirija-se a prateleira correta!");
+	}
+
+
+	printf("\nAgradecemos por usar nosso servico!");
+	printf("\nDevolva no tempo adequado de 7 dias");
+	
+	
+	}
+	return 0;
+	
+}
