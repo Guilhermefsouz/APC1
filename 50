@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	
+	int n;
+	int numero_maximo = 100;
+	
+	for (n = 0; n < numero_maximo; n++){
+		if(n % 2 == 0){
+			printf("numero par: %d \n", n);
+		}
+		
+	}
+	
+	system("pause");
+	
+	return 0;
+}
