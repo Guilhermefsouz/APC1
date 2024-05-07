@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+	int n = 20;
+		
+	for (n = 20; n >= 0; n--){
+		printf("%d \n contagem regressiva: ", n);
+	}
+
+	system("pause");	
+	
+	return 0;
+}
