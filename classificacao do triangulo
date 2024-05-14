@@ -15,7 +15,10 @@ int main(){
 	printf("terceiro lado: ");
 	scanf("%d", &z);
 	
-	if((x == y && y != z) || (x != y && y == z) || (z == x && x != y)){
+	if((x == 0) || (y == 0) || (z == 0)){
+		printf("Erro");
+	}
+	else if((x == y && y != z) || (x != y && y == z) || (z == x && x != y)){
 		printf("tringulo isoceles (dois lados iguais)");
 	}
 	
@@ -26,6 +29,7 @@ int main(){
 	else if(x != y != z){
 		printf("triangulo escaleno (nenhum lado igual)");
 	}
+	
 	
 	return 0;
 }
